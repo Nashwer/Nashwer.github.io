@@ -20,21 +20,24 @@
   <link rel="preload" href="/css/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/css/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
-  <meta name="description" content="前言上个学期在前辈的推荐下想要搭建一个自己的博客，当时还是一个信息收集和抽象归纳能力都很羸弱的小白，一番折腾之后迟迟没有搭建出一个稳定可用的框架。现在稍微有了一点时间，决定还是把流程和配置都简化，至少做出来一个可以用来堆积笔记的小仓库。所以今天来写一个技术栈梳理+部署流程的总结（重点在于经验总结，不在于部署流程，极速版配置流程可参考配置教程和使用教程  技术栈运行基础&#x2F;前置知识从上到下分">
+  <meta name="description" content="上个学期在前辈的推荐下想要搭建一个自己的博客，当时还是一个信息收集和抽象归纳能力都很羸弱的小白，一番折腾之后迟迟没有搭建出一个稳定可用的框架。现在稍微有了一点时间，决定还是把流程和配置都简化，至少做出来一个可以用来堆积笔记的小仓库。所以今天来写一个技术栈梳理+部署流程的总结（重点在于经验总结，不在于部署流程，极速版配置流程可参考配置教程和使用教程  技术栈运行基础&#x2F;前置知识从上到下分为三">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Github Pages+Hexo博客搭建">
 <meta property="og:url" content="https://nashwer.github.io/2026/04/10/Github-Pages-Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="Nashwer&#39;s Field">
-<meta property="og:description" content="前言上个学期在前辈的推荐下想要搭建一个自己的博客，当时还是一个信息收集和抽象归纳能力都很羸弱的小白，一番折腾之后迟迟没有搭建出一个稳定可用的框架。现在稍微有了一点时间，决定还是把流程和配置都简化，至少做出来一个可以用来堆积笔记的小仓库。所以今天来写一个技术栈梳理+部署流程的总结（重点在于经验总结，不在于部署流程，极速版配置流程可参考配置教程和使用教程  技术栈运行基础&#x2F;前置知识从上到下分">
+<meta property="og:description" content="上个学期在前辈的推荐下想要搭建一个自己的博客，当时还是一个信息收集和抽象归纳能力都很羸弱的小白，一番折腾之后迟迟没有搭建出一个稳定可用的框架。现在稍微有了一点时间，决定还是把流程和配置都简化，至少做出来一个可以用来堆积笔记的小仓库。所以今天来写一个技术栈梳理+部署流程的总结（重点在于经验总结，不在于部署流程，极速版配置流程可参考配置教程和使用教程  技术栈运行基础&#x2F;前置知识从上到下分为三">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://nashwer.github.io/2026/04/10/Github-Pages-Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/images/Stormi.png">
+<meta property="og:image" content="https://nashwer.github.io/images/New_shot.png">
+<meta property="og:image" content="https://nashwer.github.io/variables_shot.png">
+<meta property="og:image" content="https://nashwer.github.io/images/hotkey_shot.png">
+<meta property="og:image" content="https://nashwer.github.io/images/NewResult_shot.png">
 <meta property="article:published_time" content="2026-04-10T06:08:08.000Z">
-<meta property="article:modified_time" content="2026-04-10T11:36:11.558Z">
+<meta property="article:modified_time" content="2026-04-10T13:36:37.423Z">
 <meta property="article:author" content="Nashwer">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Blog">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://nashwer.github.io/2026/04/10/Github-Pages-Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/images/Stormi.png">
+<meta name="twitter:image" content="https://nashwer.github.io/images/New_shot.png">
   
     <link rel="alternate" href="/atom.xml" title="Nashwer's Field" type="application/atom+xml">
   
@@ -175,13 +178,13 @@
     <div class="widget">
       <h3 class="widget-title">Categories</h3>
       <div class="category-box">
-            <a class="category-link" href="/categories/CS%E6%9D%82%E9%A1%B9/">
-                CS杂项
+            <a class="category-link" href="/categories/%E6%B5%8B%E8%AF%95/">
+                测试
                 <div class="category-count">1</div>
             </a>
         
-            <a class="category-link" href="/categories/%E6%B5%8B%E8%AF%95/">
-                测试
+            <a class="category-link" href="/categories/CS%E6%9D%82%E9%A1%B9/">
+                CS杂项
                 <div class="category-count">1</div>
             </a>
         </div>
@@ -210,16 +213,6 @@
 <article id="post-Github-Pages-Hexo博客搭建" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
     
-<div class="article-gallery">
-  <div class="article-gallery-photos">
-    
-      <a class="article-gallery-img" rel="gallery_cmnsu7iv40002ysg39458bxe3">
-        <img src="/images/Stormi.png" itemprop="image">
-      </a>
-    
-  </div>
-</div>
-
    
   <div class="article-inner">
     <div class="article-main">
@@ -249,7 +242,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            1.9k words 
+            2.7k words 
           </div>
         </div>
         
@@ -258,7 +251,7 @@
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
         
-          <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>上个学期在前辈的推荐下想要搭建一个自己的博客，当时还是一个信息收集和抽象归纳能力都很羸弱的小白，一番折腾之后迟迟没有搭建出一个稳定可用的框架。现在稍微有了一点时间，决定还是把流程和配置都简化，至少做出来一个可以用来堆积笔记的小仓库。所以今天来写一个技术栈梳理+部署流程的总结（重点在于经验总结，不在于部署流程，极速版配置流程可参考<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/370635512">配置教程</a>和<a target="_blank" rel="noopener" href="https://www.cnblogs.com/xango/p/18909673">使用教程</a></p>
+          <p>上个学期在前辈的推荐下想要搭建一个自己的博客，当时还是一个信息收集和抽象归纳能力都很羸弱的小白，一番折腾之后迟迟没有搭建出一个稳定可用的框架。现在稍微有了一点时间，决定还是把流程和配置都简化，至少做出来一个可以用来堆积笔记的小仓库。所以今天来写一个技术栈梳理+部署流程的总结（重点在于经验总结，不在于部署流程，极速版配置流程可参考<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/370635512">配置教程</a>和<a target="_blank" rel="noopener" href="https://www.cnblogs.com/xango/p/18909673">使用教程</a></p>
 <hr>
 <h1 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h1><h2 id="运行基础-前置知识"><a href="#运行基础-前置知识" class="headerlink" title="运行基础&#x2F;前置知识"></a>运行基础&#x2F;前置知识</h2><p>从上到下分为三层</p>
 <h3 id="1-环境层"><a href="#1-环境层" class="headerlink" title="1.环境层"></a>1.环境层</h3><ul>
@@ -273,14 +266,31 @@
 <li><strong>Github（云端部署平台）</strong><br>此处介绍内容分为存储静态网页的Repository（仓库）和Github Pages两个部分</li>
 </ul>
 <p>Repository 用于存放本地工作文件夹中public的内容（由Git实现，后面会讲），存储了网站的前端代码。以username.github.io命名，作为用户站点的唯一表示。</p>
-<p>Github Pages是Github提供的静态站点托管服务，用于建立属于个人的网站，提供免费的服务器空间与域名。当建立好以 username.github.io 命名的repo时，便可以使用<a target="_blank" rel="noopener" href="https://username.github.io/">https://username.github.io</a> 这个域名来访问，如果有需要还可以买个自己的域名，指向利用GithubPages建立的站点即可</p>
+<p>Github Pages是Github提供的静态站点托管服务，用于建立属于个人的网站，提供免费的服务器空间与域名。当建立好以 username.github.io 命名的repo时，便可以使用 <a target="_blank" rel="noopener" href="https://username.github.io/">https://username.github.io</a> 这个域名来访问，如果有需要还可以买个自己的域名，指向利用GithubPages建立的站点即可</p>
 <h1 id="在我部署博客的过程中发生了什么？"><a href="#在我部署博客的过程中发生了什么？" class="headerlink" title="在我部署博客的过程中发生了什么？"></a>在我部署博客的过程中发生了什么？</h1><ul>
 <li>前提：Git与Github已完成连接，安装好Node.js环境</li>
 <li>流程：进入本地工作文件夹-&gt;利用npm下载好Hexo框架-&gt;在本地文件配置好主题、博客文章（Markdown文本）-&gt;在配置文件中指向网页repo，将Hexo渲染好的静态代码放到本地的public文件并通过Git工具提交到repo-&gt;站点更新，博客上传成功</li>
 </ul>
-<h1 id="一些常用命令"><a href="#一些常用命令" class="headerlink" title="一些常用命令"></a>一些常用命令</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Hexo clean</span><br><span class="line"> // 清空存放渲染后页面的public文件夹 </span><br><span class="line"> </span><br><span class="line">Hexo g</span><br><span class="line">// 根据工作文件目录中的配置和内容渲染静态网页并将代码放入public文件夹</span><br><span class="line"></span><br><span class="line">Hexo s</span><br><span class="line">// 将pubic中的静态网页放到http://localhost:4000 上进行预览（注意，在此模式下hexo会自动更新md文件的内容，所以测试markdown渲染的时候可以不用每次都重新重新clean+generate，但如果修改了配置文件则需要重新跑一遍hexo c+g+s）</span><br><span class="line"></span><br><span class="line">Hexo d</span><br><span class="line">// 借助git将public文件夹下的页面部署到Github仓库，更新站点内容</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="一些常用命令"><a href="#一些常用命令" class="headerlink" title="一些常用命令"></a>一些常用命令</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Hexo clean</span><br><span class="line"> // 清空存放渲染后页面的public文件夹 </span><br><span class="line"> </span><br><span class="line">Hexo g</span><br><span class="line">// 根据工作文件目录中的配置和内容渲染静态网页并将代码放入public文件夹</span><br><span class="line"></span><br><span class="line">Hexo s</span><br><span class="line">// 将pubic中的静态网页放到 http://localhost:4000 上进行预览（注意，在此模式下hexo会自动更新md文件的内容，所以测试markdown渲染的时候可以不用每次都重新重新clean+generate，但如果修改了配置文件则需要重新跑一遍hexo c+g+s）</span><br><span class="line"></span><br><span class="line">Hexo d</span><br><span class="line">// 借助git将public文件夹下的页面部署到Github仓库，更新站点内容</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<hr>
 <h1 id="结合Obsidian-Shell-Commands插件进行自动化"><a href="#结合Obsidian-Shell-Commands插件进行自动化" class="headerlink" title="结合Obsidian+Shell Commands插件进行自动化"></a>结合Obsidian+Shell Commands插件进行自动化</h1><p>配完了主题以后，在Gemini大师的启发下决定使用知名markdown编辑器Obsidian进行一个写博客的流程优化，实测用起来也是非常爽，可以实现不开命令行窗口就能完成写作+部署全流程，分享一下我的改造流程</p>
-<h2 id="改造过程-一些前置知识"><a href="#改造过程-一些前置知识" class="headerlink" title="改造过程+一些前置知识"></a>改造过程+一些前置知识</h2><p>我们都知道，博客文章都放在source&#x2F;_post目录下,图片等资源也最好新开一个images文件夹来存放。于是我们可以使用Obsidian打开source文件夹作为一个封闭的空间管理博客文章 <strong>（注意一定要仓库一定要建在source下，原因是如果直接深入到_post文件夹会导致图片资源以及草稿难以管理）</strong> ，然而这只是最基本的一步，问题是对于一个博客文章，我们并不能直接在obsidian中直接新建一个空白的md文件，他还需要维护头部信息，如tags、categories等等，所以我们一般来说会使用hexo new (post) “博客名”的方式来创建一个自带头部信息的md文件，这里的post为default值，可以不要。括号中的参数不仅可以填post，还有draft、pages，分别对应scaffolds文件夹下的三个md文件，这三个文件即为使用hexo new时创建新文件所使用的模板，指定post所用的初始模板就是scaffolds下的post.md，以此类推。</p>
+<h2 id="改造过程"><a href="#改造过程" class="headerlink" title="改造过程"></a>改造过程</h2><h3 id="一些前置知识"><a href="#一些前置知识" class="headerlink" title="一些前置知识"></a>一些前置知识</h3><p>我们都知道，博客文章都放在source&#x2F;_post目录下,图片等资源也最好新开一个images文件夹来存放。于是我们可以使用Obsidian打开source文件夹作为一个封闭的空间管理博客文章 <strong>（注意一定要仓库一定要建在source下，原因是如果直接深入到_post文件夹会导致图片资源以及草稿难以管理）</strong> ，然而这只是最基本的一步，问题是对于一个博客文章，我们并不能直接在obsidian中直接新建一个空白的md文件，他还需要维护头部信息，如tags、categories等等，所以我们一般来说会使用hexo new (post) “博客名”的方式来创建一个自带头部信息的md文件，这里的post为default值，可以不要。括号中的参数不仅可以填post，还有draft、pages，分别对应scaffolds文件夹下的三个md文件，这三个文件即为使用hexo new时创建新文件所使用的模板，指定post所用的初始模板就是scaffolds下的post.md，以此类推。</p>
+<p>于是为了合乎博客主题的要求，我们需要配置好属性齐全的模板文件并要在每次写作前hexo new一个md文件，然后才能进入obsidian进行编辑写作。同理写作完之后，我们还需要在MyBlog文件夹下运行一串hexo c+g+d才能完成一套基本的部署流程</p>
+<p>还是太麻烦了，我写东西的时候一定要开着命令行然后反复输入hexo命令吗——所以我们引入第三方插件ShellCommands来解决这个虽然不难但有点麻烦的重复工作</p>
+<p>shellcommands可以存储命令并将其链接到快捷键，我们只要设置好工作目录（在这里其实也就是仓库根目录）再定义需要的用户变量，使用时输入即可</p>
+<h3 id="介绍一下具体设置"><a href="#介绍一下具体设置" class="headerlink" title="介绍一下具体设置"></a>介绍一下具体设置</h3><p>在设置中下载完第三方插件Shell Commands，首先记得在Environment-Working directory设置好工作目录为博客根目录</p>
+<h4 id="命令1：生成新文件"><a href="#命令1：生成新文件" class="headerlink" title="命令1：生成新文件"></a>命令1：生成新文件</h4><p><img src="/images/New_shot.png"></p>
+<blockquote>
+<p>_New一个Shell Command，此命令便可运行在cmd中（Environment中也可以设置别的环境），我们需要两个自定义变量：_type和_title，（用<code>&#123;&#123;&#125;&#125;</code>包裹），默认值分别为post和NewPost<br>在Preaction中整一个弹窗来设置<br><img src="/variables_shot.png" alt="679"><br>设置一下操作名称为New再绑定一下快捷键即可<br><img src="/images/hotkey_shot.png"><br>现在直接使用 <strong>Ctrl+Shift+O</strong> 即可生成一个指定类型指定名称的新的模板文件<br><img src="/images/NewResult_shot.png" alt="513"></p>
+</blockquote>
+<h4 id="命令2：自动部署"><a href="#命令2：自动部署" class="headerlink" title="命令2：自动部署"></a>命令2：自动部署</h4><blockquote>
+<p><em>和上面差不多，而且不用自定义变量，直接New一个Shell Command然后输入hexo c &amp;&amp; hexo g &amp;&amp; hexo d，再设置一下快捷键即可（我设置的是<strong>Ctrl+Shift+P</strong> ），这个推荐开一下执行确认弹窗防止误触。</em></p>
+</blockquote>
+<h3 id="流程总结"><a href="#流程总结" class="headerlink" title="流程总结"></a>流程总结</h3><p>Ctrl+Shift+O生成一个新模板-&gt;填好模板信息写好博文内容-&gt;Ctrl+Shift+P直接发布</p>
+<blockquote>
+<p>为啥不做个Hexo s自动调试捏？因为这个shell commands是非交互式的，不方便Ctrl+C结束进程，只能用taskkill强杀。这个流程适合已经比较熟悉博客内容和md格式追求效率用hhh</p>
+</blockquote>
 
         
       </div>
