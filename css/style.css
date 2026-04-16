@@ -58,6 +58,7 @@
     --link-hover-bg: oklch(0.4 0.08 var(--primary-hue));
     --link-active-bg: oklch(0.35 0.07 var(--primary-hue));
     --blockquote-bg: oklch(0.2 0.02 var(--primary-hue));
+    --blockquote-bar: oklch(0.4 0.04 var(--primary-hue));
     --color-picker-range: oklch(0.4 0.04 var(--primary-hue));
     --badge-bg: oklch(0.75 0.12 var(--primary-hue));
     --text-on-light: oklch(0.25 0.02 var(--primary-hue));
@@ -93,6 +94,7 @@
     --link-hover-bg: #324673;
     --link-active-bg: #28395f;
     --blockquote-bg: #12161f;
+    --blockquote-bar: #3d485e;
     --color-picker-range: #3d485e;
     --badge-bg: #89acfa;
     --text-on-light: #1d222b;
@@ -146,6 +148,7 @@
     --link-active-bg: oklch(0.9 0.05 var(--primary-hue));
     --article-code-bg: oklch(0.95 0.02 var(--primary-hue));
     --blockquote-bg: oklch(0.98 0.005 var(--primary-hue));
+    --blockquote-bar: oklch(0.9 0.04 var(--primary-hue));
     --badge-bg: oklch(0.95 0.02 var(--primary-hue));
     --text-on-light: oklch(0.55 0.12 var(--primary-hue));
     --color-picker-range: oklch(0.95 0.02 var(--primary-hue));
@@ -175,6 +178,7 @@
     --link-active-bg: #cedeff;
     --article-code-bg: #e8effc;
     --blockquote-bg: #f7f8fc;
+    --blockquote-bar: #d1def9;
     --badge-bg: #e8effc;
     --text-on-light: #4f6eb7;
     --color-picker-range: #e8effc;
@@ -1371,8 +1375,8 @@ a.article-title:active {
 }
 .article-entry blockquote {
   background: var(--blockquote-bg);
-  padding: 0 24px;
-  border-radius: 8px;
+  padding: 0 24px 0 64px;
+  border-radius: 0 8px 8px 0;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -1389,11 +1393,29 @@ a.article-title:active {
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  margin: 1.2em 0;
+  margin: 1.2em 0 1.2em -40px;
   -webkit-transition: background 0.15s ease-out;
   -moz-transition: background 0.15s ease-out;
   -ms-transition: background 0.15s ease-out;
   transition: background 0.15s ease-out;
+  position: relative;
+}
+.article-entry blockquote:before {
+  content: '';
+  background: var(--blockquote-bar);
+  width: 4px;
+  position: absolute;
+  left: 40px;
+  border-radius: 2px;
+  top: 20px;
+  bottom: 20px;
+  -webkit-transition: background 0.15s ease-out;
+  -moz-transition: background 0.15s ease-out;
+  -ms-transition: background 0.15s ease-out;
+  transition: background 0.15s ease-out;
+}
+.article-entry blockquote blockquote {
+  background: none;
 }
 .article-entry footer {
   font-size: 16px;
