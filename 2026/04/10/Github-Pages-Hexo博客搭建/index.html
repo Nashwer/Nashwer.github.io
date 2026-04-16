@@ -32,8 +32,9 @@
 <meta property="og:image" content="https://nashwer.github.io/images/hotkey_shot.png">
 <meta property="og:image" content="https://nashwer.github.io/images/NewResult_shot.png">
 <meta property="og:image" content="https://nashwer.github.io/images/Blockquote_shot1.png">
+<meta property="og:image" content="https://nashwer.github.io/images/Blockquote_shot2.png">
 <meta property="article:published_time" content="2026-04-10T06:08:08.000Z">
-<meta property="article:modified_time" content="2026-04-16T07:01:30.123Z">
+<meta property="article:modified_time" content="2026-04-16T07:11:17.051Z">
 <meta property="article:author" content="Nashwer">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Blog">
@@ -288,9 +289,8 @@
 <blockquote>
 <p>发现一个Vivia作者在README中没有说明的事情：单篇博文是可以添加封面的，在Front-Matter中添加photos属性，附上URL即可,相对路径&#x2F;网络链接皆可</p>
 </blockquote>
-<h2 id="Blockquote格式改造"><a href="#Blockquote格式改造" class="headerlink" title="Blockquote格式改造"></a>Blockquote格式改造</h2><p>由于我比较喜欢Demo里对于Blockquote的样式（见下图），但成品中对于Blockquote应该是进行了修改，变成了简洁但没什么存在感的格式（无图，就是图中去掉侧边竖杠，背景色居中包裹文字），所以我又把它改了回来</p>
-<p><img src="/images/Blockquote_shot1.png"></p>
-<p><strong>修改代码如下：</strong></p>
+<h2 id="Blockquote格式改造"><a href="#Blockquote格式改造" class="headerlink" title="Blockquote格式改造"></a>Blockquote格式改造</h2><p>由于我比较喜欢Demo里对于Blockquote的样式（见图1），但成品中对于Blockquote应该是进行了修改，变成了简洁但没什么存在感的格式（见图2），所以我又把它改了回来</p>
+<p><img src="/images/Blockquote_shot1.png" alt="图1|686"><br><img src="/images/Blockquote_shot2.png" alt="图2"><br><strong>修改代码如下：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"># source/css/_variables.styl</span><br><span class="line"></span><br><span class="line"># dark Mode</span><br><span class="line">_color_set(&#123;</span><br><span class="line">  // ...other Variable...</span><br><span class="line">  --blockquote-bg: 0.20 0.02</span><br><span class="line">  --blockquote-bar: 0.40 0.04    # Add this row</span><br><span class="line">  </span><br><span class="line">  --color-picker-border: --primary</span><br><span class="line">  // ...other Variable...</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"># light Mode</span><br><span class="line">_color_set(&#123;</span><br><span class="line">  // ...other Variable...</span><br><span class="line">  --article-code-bg: 0.95 0.02</span><br><span class="line">  --blockquote-bg: 0.98 0.005</span><br><span class="line">  --blockquote-bar: 0.90 0.04    # Add this row</span><br><span class="line">  </span><br><span class="line">  --badge-bg: 0.95 0.02</span><br><span class="line">  // ...other Variable...</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"># source/css/_partial/article.styl</span><br><span class="line"></span><br><span class="line"># replace blockquote part:</span><br><span class="line">blockquote</span><br><span class="line">  background: var(--blockquote-bg)</span><br><span class="line">  padding: 0 24px 0 64px</span><br><span class="line">  border-radius: 0 8px 8px 0</span><br><span class="line">  display: flex</span><br><span class="line">  flex-direction: column</span><br><span class="line">  flex-wrap: nowrap</span><br><span class="line">  margin: 1.2em 0 1.2em -40px</span><br><span class="line">  transition: background trans-style</span><br><span class="line">  position: relative</span><br><span class="line">  &amp;:before</span><br><span class="line">    content: &#x27;&#x27;</span><br><span class="line">    background: var(--blockquote-bar)</span><br><span class="line">    width: 4px</span><br><span class="line">    position: absolute</span><br><span class="line">    left: 40px</span><br><span class="line">    border-radius: 2px</span><br><span class="line">    top: 20px</span><br><span class="line">    bottom: 20px</span><br><span class="line">    transition: background trans-style</span><br><span class="line">  blockquote</span><br><span class="line">    background: none</span><br></pre></td></tr></table></figure>
@@ -303,7 +303,7 @@
 <li>About Me建设</li>
 <li>预览页面流程自动化</li>
 </ul>
-<h1 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h1><p>一切本文中的内容都可以在<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo官方文档</a>中找到答案</p>
+<h1 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h1><p>一切本文中的技术支持都可以在<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo官方文档</a>中找到答案</p>
 
         
       </div>
