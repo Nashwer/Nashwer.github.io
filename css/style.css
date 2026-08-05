@@ -5,7 +5,7 @@
   --neut-L30: rgba(255,255,255,0.3);
   --neut-L10: rgba(255,255,255,0.1);
   --banner-dim: rgba(0,0,0,0.2);
-  --primary-hue: 265;
+  --primary-hue: 200;
   --main-title: rgba(255,255,255,0.9);
   --btn-content: var(--neut-L75);
   --btn-content-hover: var(--btn-content);
@@ -74,38 +74,38 @@
 }
 @supports not (color: oklch(0 0 0)) {
   :root {
-    --primary: #82abff;
-    --nav-dropdown-bg: #12161f;
-    --page-background: #0a0d13;
-    --card-background: #1d222b;
-    --btn-bg: #384258;
-    --btn-hover: #49556f;
-    --btn-active: #556380;
-    --card-btn-hover: #262e3d;
-    --card-btn-active: #323a4d;
-    --btn-text-hover: #12161f;
-    --btn-text-active: #0c0f17;
-    --timeline-dim-dot: #556380;
-    --title-active: #6b8dd8;
-    --tag-dot: #1d222b;
-    --highlight-selection: #323a4d;
-    --article-code-bg: #3d485e;
-    --article-block: #12161f;
-    --link-hover-bg: #324673;
-    --link-active-bg: #28395f;
-    --blockquote-bg: #12161f;
-    --blockquote-bar: #3d485e;
-    --color-picker-range: #3d485e;
-    --badge-bg: #89acfa;
-    --text-on-light: #1d222b;
-    --pagenav-curr-text: #1d222b;
-    --input-field: #12161f;
-    --primary-btn-text: #1d222b;
-    --enter-btn-bg: #12161f;
-    --enter-btn-hover: #262e3d;
-    --enter-btn-active: #323a4d;
-    --selection-bg: #324673;
-    --code-block-selection-bg: #324673;
+    --primary: #00c8d1;
+    --nav-dropdown-bg: #0a191a;
+    --page-background: #060f10;
+    --card-background: #162525;
+    --btn-bg: #27494b;
+    --btn-hover: #355d5f;
+    --btn-active: #3f6c6e;
+    --card-btn-hover: #1b3234;
+    --card-btn-active: #234042;
+    --btn-text-hover: #0a191a;
+    --btn-text-active: #061212;
+    --timeline-dim-dot: #3f6c6e;
+    --title-active: #00a4ac;
+    --tag-dot: #162525;
+    --highlight-selection: #234042;
+    --article-code-bg: #2c4e50;
+    --article-block: #0a191a;
+    --link-hover-bg: #005459;
+    --link-active-bg: #004549;
+    --blockquote-bg: #0a191a;
+    --blockquote-bar: #2c4e50;
+    --color-picker-range: #2c4e50;
+    --badge-bg: #2ac4cc;
+    --text-on-light: #162525;
+    --pagenav-curr-text: #162525;
+    --input-field: #0a191a;
+    --primary-btn-text: #162525;
+    --enter-btn-bg: #0a191a;
+    --enter-btn-hover: #1b3234;
+    --enter-btn-active: #234042;
+    --selection-bg: #005459;
+    --code-block-selection-bg: #005459;
   }
 }
 :root[theme='light'] {
@@ -161,32 +161,32 @@
 }
 @supports not (color: oklch(0 0 0)) {
   :root[theme='light'] {
-    --primary: #739bf5;
-    --page-background: #ebeef5;
-    --nav-dropdown-bg: #f7f8fc;
-    --btn-bg: #e6efff;
-    --btn-content: #4f6eb7;
-    --btn-hover: #cedeff;
-    --btn-active: #b4ceff;
-    --btn-text-hover: #e6efff;
-    --btn-text-active: #f5f8ff;
-    --btn-text-content: #739bf5;
-    --card-btn-hover: #f7f8fc;
-    --card-btn-active: #d4def3;
-    --title-active: #5d7dc8;
-    --link-hover-bg: #e6efff;
-    --link-active-bg: #cedeff;
-    --article-code-bg: #e8effc;
-    --blockquote-bg: #f7f8fc;
-    --blockquote-bar: #d1def9;
-    --badge-bg: #e8effc;
-    --text-on-light: #4f6eb7;
-    --color-picker-range: #e8effc;
-    --input-field: #f7f8fc;
-    --enter-btn-bg: #f7f8fc;
-    --enter-btn-hover: #edf2fc;
-    --enter-btn-active: #d4def3;
-    --selection-bg: #cedeff;
+    --primary: #00b7c0;
+    --page-background: #e7f1f1;
+    --nav-dropdown-bg: #f5f9fa;
+    --btn-bg: #dcf4f5;
+    --btn-content: #00848b;
+    --btn-hover: #b8e9eb;
+    --btn-active: #8cdee2;
+    --btn-text-hover: #dcf4f5;
+    --btn-text-active: #f1fbfb;
+    --btn-text-content: #00b7c0;
+    --card-btn-hover: #f5f9fa;
+    --card-btn-active: #c8e4e6;
+    --title-active: #00959c;
+    --link-hover-bg: #dcf4f5;
+    --link-active-bg: #b8e9eb;
+    --article-code-bg: #e0f3f4;
+    --blockquote-bg: #f5f9fa;
+    --blockquote-bar: #c0e7e8;
+    --badge-bg: #e0f3f4;
+    --text-on-light: #00848b;
+    --color-picker-range: #e0f3f4;
+    --input-field: #f5f9fa;
+    --enter-btn-bg: #f5f9fa;
+    --enter-btn-hover: #e7f5f6;
+    --enter-btn-active: #c8e4e6;
+    --selection-bg: #b8e9eb;
   }
 }
 body {
