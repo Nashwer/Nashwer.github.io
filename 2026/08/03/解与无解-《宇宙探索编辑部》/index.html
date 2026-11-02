@@ -42,6 +42,11 @@
     <link rel="shortcut icon" href="/images/Cookie_1.png">
   
   
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+    />
+  
   
 <link rel="stylesheet" href="/css/style.css">
 
@@ -213,7 +218,7 @@
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img" rel="gallery_cmsg9l8560002k0g3gusueu9d">
+      <a class="article-gallery-img" rel="gallery_cmvzced780002qwg3b965522g">
         <img src="/images/%E9%94%85.png" itemprop="image">
       </a>
     
@@ -326,6 +331,22 @@
 
 
 
+
+  <div id="wl-comment-card" class="wl-comment-card">
+    <div class="main-title-bar">
+      <div class="main-title-dot"></div>
+      <div class="main-title">Comments </div>
+    </div>
+    <div id="waline"></div>
+  </div>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+    init({
+      el: '#waline',
+      serverURL: 'https://blog-comment-lime-seven.vercel.app',
+      dark: 'html[theme="dark"]',
+    });
+  </script>
 
     </div>
     <div id="footer-wrapper">
